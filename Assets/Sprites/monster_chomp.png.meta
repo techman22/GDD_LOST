@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 2fe2cb34e0e77ce4d8a534e747f76132
+guid: af79ddde9866b164983cef8764f0eb14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1617004695979393580
-    second: enemy_idle_0
+      213: 1053102570363473349
+    second: monster_chomp_0
   - first:
-      213: -266049441143215253
-    second: enemy_idle_1
+      213: -7630138893660715069
+    second: monster_chomp_1
   - first:
-      213: -7847777839274781794
-    second: enemy_idle_2
+      213: -2798152301089769334
+    second: monster_chomp_2
   - first:
-      213: 5040571409847071969
-    second: enemy_idle_3
+      213: 7341238439450639288
+    second: monster_chomp_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,28 +101,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_idle_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 0
-        width: 34
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c228df72431c07610800000000000000
-      internalID: 1617004695979393580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_idle_1
+      name: monster_chomp_0
       rect:
         serializedVersion: 2
         x: 55
@@ -136,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6ba7ff517dce4cf0800000000000000
-      internalID: -266049441143215253
+      spriteID: 5cdc09a453f5d9e00800000000000000
+      internalID: 1053102570363473349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_idle_2
+      name: monster_chomp_1
       rect:
         serializedVersion: 2
-        x: 103
+        x: 127
         y: 0
-        width: 34
-        height: 68
+        width: 59
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9318dd62a7171390800000000000000
-      internalID: -7847777839274781794
+      spriteID: 3c706783a1d4c1690800000000000000
+      internalID: -7630138893660715069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_idle_3
+      name: monster_chomp_2
       rect:
         serializedVersion: 2
-        x: 151
+        x: 206
         y: 0
-        width: 34
-        height: 68
+        width: 76
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +157,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4bcecbdf4b3f540800000000000000
-      internalID: 5040571409847071969
+      spriteID: a883a12be47fa29d0800000000000000
+      internalID: -2798152301089769334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_chomp_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 84
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbf5e2177151e560800000000000000
+      internalID: 7341238439450639288
       vertices: []
       indices: 
       edges: []

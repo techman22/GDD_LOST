@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 2fe2cb34e0e77ce4d8a534e747f76132
+guid: 5f5cf7bef30e5f14c899d043ff74e111
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1617004695979393580
-    second: enemy_idle_0
+      213: 6587422789287957419
+    second: golem_dazed_0
   - first:
-      213: -266049441143215253
-    second: enemy_idle_1
+      213: -7912344153337377547
+    second: golem_dazed_1
   - first:
-      213: -7847777839274781794
-    second: enemy_idle_2
+      213: -8798269860649527219
+    second: golem_dazed_2
   - first:
-      213: 5040571409847071969
-    second: enemy_idle_3
+      213: 3805035011205454965
+    second: golem_dazed_3
+  - first:
+      213: 8861311369883357382
+    second: golem_dazed_4
+  - first:
+      213: 1809491674817267623
+    second: golem_dazed_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_idle_0
+      name: golem_dazed_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 3
         y: 0
-        width: 34
-        height: 68
+        width: 31
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c228df72431c07610800000000000000
-      internalID: 1617004695979393580
+      spriteID: ba352dc002a3b6b50800000000000000
+      internalID: 6587422789287957419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_idle_1
+      name: golem_dazed_1
       rect:
         serializedVersion: 2
-        x: 55
+        x: 43
         y: 0
         width: 34
-        height: 68
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6ba7ff517dce4cf0800000000000000
-      internalID: -266049441143215253
+      spriteID: 5fccfa7f9e4b13290800000000000000
+      internalID: -7912344153337377547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_idle_2
+      name: golem_dazed_2
       rect:
         serializedVersion: 2
-        x: 103
+        x: 85
         y: 0
-        width: 34
-        height: 68
+        width: 31
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9318dd62a7171390800000000000000
-      internalID: -7847777839274781794
+      spriteID: d4895fd4d2446e580800000000000000
+      internalID: -8798269860649527219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_idle_3
+      name: golem_dazed_3
       rect:
         serializedVersion: 2
-        x: 151
+        x: 126
         y: 0
-        width: 34
-        height: 68
+        width: 31
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4bcecbdf4b3f540800000000000000
-      internalID: 5040571409847071969
+      spriteID: 57c53d8ce233ec430800000000000000
+      internalID: 3805035011205454965
       vertices: []
       indices: 
       edges: []
