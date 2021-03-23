@@ -6,9 +6,7 @@ TagManager:
   tags:
   - Fire
   - Projectile
-  - Item
-  - Torchlight
-  - Item2
+  - Hurt
   layers:
   - Default
   - TransparentFX
@@ -18,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
