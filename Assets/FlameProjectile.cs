@@ -37,3 +37,5 @@ public class FlameProjectile : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
     }
 }
+
+

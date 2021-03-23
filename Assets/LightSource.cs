@@ -27,7 +27,8 @@ public class LightSource : MonoBehaviour
     {
        
 
-        TheLight.pointLightOuterRadius -= .0009f;
+        TheLight.pointLightOuterRadius -= .0001f;
+        GetComponent<CircleCollider2D>().radius -= .0001f;
         if(TheLight.pointLightOuterRadius <= 0f)
         {
             Destroy(playerFire);
