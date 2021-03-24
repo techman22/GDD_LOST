@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class EndGoal : MonoBehaviour
 {
 
     public GameObject Text;
     Animator anim;
-    float delay = 3;
-    bool timerenabled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +19,7 @@ public class EndGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        delay -= Time.deltaTime;
-        if (delay <= 0)
-        {
-            //Application.LoadLevel(Application.loadedLevel + 1);
-        }
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -34,7 +27,6 @@ public class EndGoal : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Text.SetActive(true);
-            timerenabled = true;
         }
     }
 
