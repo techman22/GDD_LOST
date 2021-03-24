@@ -39,6 +39,10 @@ public class ShadowBoi : MonoBehaviour
             {
                 anim.Play("ShadowAttack");
             }
+            else
+            {
+                GetComponent<Collider>().enabled = false;
+            }
         }
 
         if(other.gameObject.tag == "Projectile")

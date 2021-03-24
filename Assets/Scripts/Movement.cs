@@ -12,12 +12,18 @@ public class Movement : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
     Animator anim;
+
+    private float boostTimer;
+    private bool isBoosted;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        boostTimer = 0;
+        isBoosted = false;
     }
 
     // Update is called once per frame
@@ -26,6 +32,26 @@ public class Movement : MonoBehaviour
         Move();
         Jump();
         CheckIfJumping();
+        if (isBoosted)
+        {
+            boostTimer += Time.deltaTime;
+            if (boostTimer >= 10)
+            {
+                speed = 1f;
+                boostTimer = 0;
+                isBoosted = false;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Item2")
+        {
+            isBoosted = true;
+            speed = 1.5f;
+            Destroy(collision.gameObject);
+        }
     }
 
     void Move()

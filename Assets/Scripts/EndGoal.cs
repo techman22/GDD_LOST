@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +10,7 @@ public class EndGoal : MonoBehaviour
     public GameObject Text;
     Animator anim;
     float delay = 3;
-    bool timerenabled = false;
+    bool timer = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +22,13 @@ public class EndGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        delay -= Time.deltaTime;
-        if (delay <= 0)
+        if(timer == true)
         {
-            Application.LoadLevel(Application.loadedLevel + 1);
+            delay -= Time.deltaTime;
+            if (delay <= 0)
+            {
+                Application.LoadLevel(Application.loadedLevel + 1);
+            }
         }
     }
 
@@ -34,7 +37,7 @@ public class EndGoal : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Text.SetActive(true);
-            timerenabled = true;
+            timer = true;
         }
     }
 
@@ -43,6 +46,7 @@ public class EndGoal : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Text.SetActive(false);
+            timer = false;
         }
     }
 }
