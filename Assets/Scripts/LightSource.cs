@@ -25,11 +25,17 @@ public class LightSource : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-
-        TheLight.pointLightOuterRadius -= .0001f;
-        GetComponent<CircleCollider2D>().radius -= .0001f;
-        if(TheLight.pointLightOuterRadius <= 0f)
+        if (TheLight.pointLightOuterRadius >= 2)
+        {
+            TheLight.pointLightOuterRadius -= .0009f;
+            GetComponent<CircleCollider2D>().radius -= .0009f;
+        }
+        else
+        {
+            TheLight.pointLightOuterRadius -= .0001f;
+            GetComponent<CircleCollider2D>().radius -= .0001f;
+        }
+        if (TheLight.pointLightOuterRadius <= 0f)
         {
             Destroy(playerFire);
             SceneManager.LoadScene("SampleScene");

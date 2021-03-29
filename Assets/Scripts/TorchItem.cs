@@ -38,7 +38,7 @@ public class TorchItem : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player") {
-            TheLight.pointLightOuterRadius += 2f;
+            TheLight.pointLightOuterRadius += 1.5f;
             Destroy(ItemLight);
             Destroy(torch);
 
