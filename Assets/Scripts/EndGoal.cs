@@ -17,6 +17,7 @@ public class EndGoal : MonoBehaviour
         anim = GetComponent<Animator>();
         Text.SetActive(false);
         anim.Play("SlimeBoi");
+       
     }
 
     // Update is called once per frame

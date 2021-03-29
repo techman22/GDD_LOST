@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
         if (isBoosted)
         {
             boostTimer += Time.deltaTime;
-            if (boostTimer >= 10)
+            if (boostTimer >= 20)
             {
                 speed = 1f;
                 boostTimer = 0;
