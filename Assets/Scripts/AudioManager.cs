@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
             Play("BackgroundMusic2");
         }
     }
-   
+
 
     public void Play(string name)
     {

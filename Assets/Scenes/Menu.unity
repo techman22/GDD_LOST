@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: sounds.Array.data[1].name
       value: BackgroundMusic2
       objectReference: {fileID: 0}
+    - target: {fileID: 1298391331390205707, guid: 2a934a0f0e897b34ca4fab0b2bf3a53e, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.516
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a934a0f0e897b34ca4fab0b2bf3a53e, type: 3}
 --- !u!1 &1371166770

@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 4
-  projectileTimer: 5
+  projectileTimer: 7
 --- !u!114 &-7729701914276529315
 MonoBehaviour:
   m_ObjectHideFlags: 0
