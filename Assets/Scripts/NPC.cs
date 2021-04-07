@@ -26,7 +26,7 @@ public class NPC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Collision enter");
+           // Debug.Log("Collision enter");
             Text.SetActive(true);
         }
     }
@@ -35,7 +35,7 @@ public class NPC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Collision exit");
+            //Debug.Log("Collision exit");
             Text.SetActive(false);
         }
     }
