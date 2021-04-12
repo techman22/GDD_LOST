@@ -29,12 +29,12 @@ public class EndGoal : MonoBehaviour
             delay -= Time.deltaTime;
             if (delay <= 0)
             {
-                if(SceneManager.GetActiveScene().buildIndex == 1)
+                if(SceneManager.GetActiveScene().buildIndex == 2)
                 {
                     FindObjectOfType<AudioManager>().Pause("BackgroundMusic1");
                     FindObjectOfType<AudioManager>().Play("BackgroundMusic2");
                 }
-                if (SceneManager.GetActiveScene().buildIndex == 2)
+                if (SceneManager.GetActiveScene().buildIndex == 3)
                 {
                     FindObjectOfType<AudioManager>().Pause("Fire");
                     FindObjectOfType<AudioManager>().Pause("BackgroundMusic2");

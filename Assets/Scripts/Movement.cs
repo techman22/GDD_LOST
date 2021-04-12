@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     Animator anim;
     GameObject playerFire;
     Light2D TheLight;
+    CircleCollider2D playerCircleRadius;
 
     private float boostTimer;
     private bool isBoosted;
@@ -29,6 +30,7 @@ public class Movement : MonoBehaviour
 
         playerFire = GameObject.FindWithTag("Fire");
         TheLight = playerFire.GetComponent<Light2D>();
+        playerCircleRadius = playerFire.GetComponent<CircleCollider2D>();
         boostTimer = 0;
         isBoosted = false;
     }
@@ -56,6 +58,8 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.tag == "Item")
         {
             TheLight.pointLightOuterRadius += 1.5f;
+            playerCircleRadius.radius += 1.5f;
+
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Item2")

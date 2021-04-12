@@ -38,7 +38,12 @@ public class LightSource : MonoBehaviour
         if (TheLight.pointLightOuterRadius <= 0f)
         {
             Destroy(playerFire);
-            SceneManager.LoadScene("SampleScene");
+            if (SceneManager.GetActiveScene().buildIndex <= 1)
+                SceneManager.LoadScene("Tutorial");
+            else
+            {
+                SceneManager.LoadScene("SampleScene");
+            }
         }
         //if (Input.GetKeyDown(KeyCode.E))
         //{
