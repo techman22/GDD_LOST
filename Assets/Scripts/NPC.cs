@@ -26,6 +26,7 @@ public class NPC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+           // Debug.Log("Collision enter");
             Text.SetActive(true);
         }
     }
@@ -34,7 +35,24 @@ public class NPC : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            //Debug.Log("Collision exit");
             Text.SetActive(false);
         }
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "Player")
+    //    {
+    //        Debug.Log("Collision enter");
+    //        Text.SetActive(true);
+    //    }
+    //}
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        Debug.Log("Collision exit");
+    //        Text.SetActive(false);
+    //    }
+    //}
 }

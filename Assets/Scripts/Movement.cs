@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class Movement : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class Movement : MonoBehaviour
     public float checkGroundRadius;
     public LayerMask groundLayer;
     Animator anim;
+    GameObject playerFire;
+    Light2D TheLight;
+    CircleCollider2D playerCircleRadius;
 
     private float boostTimer;
     private bool isBoosted;
@@ -22,6 +27,10 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        playerFire = GameObject.FindWithTag("Fire");
+        TheLight = playerFire.GetComponent<Light2D>();
+        playerCircleRadius = playerFire.GetComponent<CircleCollider2D>();
         boostTimer = 0;
         isBoosted = false;
     }
@@ -35,7 +44,7 @@ public class Movement : MonoBehaviour
         if (isBoosted)
         {
             boostTimer += Time.deltaTime;
-            if (boostTimer >= 10)
+            if (boostTimer >= 20)
             {
                 speed = 1f;
                 boostTimer = 0;
@@ -46,6 +55,13 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Item")
+        {
+            TheLight.pointLightOuterRadius += 1.5f;
+            playerCircleRadius.radius += 1.5f;
+
+            Destroy(collision.gameObject);
+        }
         if (collision.gameObject.tag == "Item2")
         {
             isBoosted = true;

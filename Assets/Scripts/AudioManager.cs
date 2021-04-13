@@ -3,6 +3,7 @@
 using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 
@@ -34,8 +35,17 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        Play("BackgroundMusic1");
+        if (SceneManager.GetActiveScene().buildIndex <= 1)
+        {
+            Play("BackgroundMusic1");
+        }
+        else
+        {
+            Pause("BackgroundMusic1");
+            Play("BackgroundMusic2");
+        }
     }
+
 
     public void Play(string name)
     {

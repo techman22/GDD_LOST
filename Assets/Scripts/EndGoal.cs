@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class EndGoal : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class EndGoal : MonoBehaviour
         anim = GetComponent<Animator>();
         Text.SetActive(false);
         anim.Play("SlimeBoi");
+       
     }
 
     // Update is called once per frame
@@ -27,7 +29,20 @@ public class EndGoal : MonoBehaviour
             delay -= Time.deltaTime;
             if (delay <= 0)
             {
-                Application.LoadLevel(Application.loadedLevel + 1);
+                if(SceneManager.GetActiveScene().buildIndex == 2)
+                {
+                    FindObjectOfType<AudioManager>().Pause("BackgroundMusic1");
+                    FindObjectOfType<AudioManager>().Play("BackgroundMusic2");
+                }
+                if (SceneManager.GetActiveScene().buildIndex == 3)
+                {
+                    FindObjectOfType<AudioManager>().Pause("Fire");
+                    FindObjectOfType<AudioManager>().Pause("BackgroundMusic2");
+                }
+
+
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //Application.LoadLevel(Application.loadedLevel + 1);
             }
         }
     }

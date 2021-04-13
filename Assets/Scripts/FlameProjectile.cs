@@ -28,7 +28,7 @@ public class FlameProjectile : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                TheLight.pointLightOuterRadius -= .001f;
+                TheLight.pointLightOuterRadius -= .01f;
                 Instantiate(projectile, flamePosition.position, flamePosition.rotation);
                 timeBtwShots = startTimeBtwShots;
             }
