@@ -198,7 +198,11 @@ GameObject:
   - component: {fileID: 159153814}
   - component: {fileID: 159153816}
   - component: {fileID: 159153815}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 0
+>>>>>>> 46154d9bf721a1be90248cfd9b21426cc1490757
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5093,7 +5097,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159153810}
+<<<<<<< HEAD
   m_BodyType: 1
+=======
+  m_BodyType: 0
+>>>>>>> 46154d9bf721a1be90248cfd9b21426cc1490757
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
