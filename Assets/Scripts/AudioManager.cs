@@ -35,7 +35,7 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex <= 1)
+        if (SceneManager.GetActiveScene().buildIndex <= 3)
         {
             Play("BackgroundMusic1");
         }
