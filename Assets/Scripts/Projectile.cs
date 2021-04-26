@@ -51,10 +51,16 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-      // if(collision.tag == "Ground"){
-          // Instantiate(tmpLight, transform.position, Quaternion.identity);
-           StartCoroutine( StartCountdown(3, this.gameObject));
-
+        // if(collision.tag == "Ground"){
+        // Instantiate(tmpLight, transform.position, Quaternion.identity);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            StartCoroutine(StartCountdown(1, this.gameObject));
+        }
+        else
+        {
+            StartCoroutine(StartCountdown(3, this.gameObject));
+        }
             // Destroy(collision.gameObject);
            // Destroy(tmpLight);
             //Destroy(this.gameObject);

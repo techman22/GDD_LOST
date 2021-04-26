@@ -13,6 +13,12 @@ public class MainMenu : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Fire");
 
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            SceneManager.LoadScene(2);
+            FindObjectOfType<AudioManager>().Play("Fire");
+
+        }
         else
         {
             SceneManager.LoadScene("Menu");

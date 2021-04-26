@@ -42,7 +42,7 @@ public class LightSource : MonoBehaviour
                 SceneManager.LoadScene("Tutorial");
             else
             {
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene(5);
             }
         }
         //if (Input.GetKeyDown(KeyCode.E))

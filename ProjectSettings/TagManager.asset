@@ -7,6 +7,10 @@ TagManager:
   - Fire
   - Projectile
   - Hurt
+  - Item
+  - Torchlight
+  - Item2
+  - Enemy
   layers:
   - Default
   - TransparentFX
