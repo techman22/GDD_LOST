@@ -38,13 +38,13 @@ public class LightSource : MonoBehaviour
         //}
         if (TheLight.pointLightOuterRadius >= 2)
         {
-            TheLight.pointLightOuterRadius -= .0018f;
-            GetComponent<CircleCollider2D>().radius -= .0018f;
+            TheLight.pointLightOuterRadius -= .0020f;
+            GetComponent<CircleCollider2D>().radius -= .0020f;
         }
         else
         {
-            TheLight.pointLightOuterRadius -= .0004f;
-            GetComponent<CircleCollider2D>().radius -= .0004f;
+            TheLight.pointLightOuterRadius -= .0005f;
+            GetComponent<CircleCollider2D>().radius -= .0005f;
         }
         if (TheLight.pointLightOuterRadius <= 0f)
         {
