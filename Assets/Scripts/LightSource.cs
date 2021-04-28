@@ -32,8 +32,8 @@ public class LightSource : MonoBehaviour
         }
         else
         {
-            TheLight.pointLightOuterRadius -= .0001f;
-            GetComponent<CircleCollider2D>().radius -= .0001f;
+            TheLight.pointLightOuterRadius -= .0002f;
+            GetComponent<CircleCollider2D>().radius -= .0002f;
         }
         if (TheLight.pointLightOuterRadius <= 0f)
         {
