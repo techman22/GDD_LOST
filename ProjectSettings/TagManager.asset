@@ -11,6 +11,7 @@ TagManager:
   - Torchlight
   - Item2
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX

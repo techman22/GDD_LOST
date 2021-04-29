@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class ShadowBoi : MonoBehaviour
 {
-
     Animator anim;
     bool hiding;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        hiding = true;
+        hiding = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void Attack()
-    {
-
+       
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,17 +27,17 @@ public class ShadowBoi : MonoBehaviour
             hiding = true;
         }
 
-        if (other.gameObject.tag == "Hurt")
-        {
-            if (hiding == false)
-            {
-                anim.Play("ShadowAttack");
-            }
-            else
-            {
-                GetComponent<Collider>().enabled = false;
-            }
-        }
+        //if (other.gameObject.tag == "Hurt")
+        //{
+        //    if (hiding == false)
+        //    {
+        //        anim.Play("ShadowAttack");
+        //    }
+        //    else
+        //    {
+        //        GetComponent<Collider>().enabled = false;
+        //    }
+        //}
 
         if(other.gameObject.tag == "Projectile")
         {

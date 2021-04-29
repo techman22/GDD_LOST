@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/2ndCave.unity
+    guid: 3e88feaa606844a45bb336c89ab60227
+  - enabled: 1
     path: Assets/Scenes/ForestLevel.unity
     guid: 06cd79424779f194ea34ce3c2febb922
+  - enabled: 1
+    path: Assets/Scenes/2ndForest.unity
+    guid: 0d04f80bae64b3e44a4551762c67f0bf
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 1406809d3aee4d349bc0a178f576e234
