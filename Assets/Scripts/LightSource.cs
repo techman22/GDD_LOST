@@ -25,15 +25,26 @@ public class LightSource : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*Use the commented code if running in unity*/
+        //if (TheLight.pointLightOuterRadius >= 2)
+        //{
+        //    TheLight.pointLightOuterRadius -= .0009f;
+        //    GetComponent<CircleCollider2D>().radius -= .0009f;
+        //}
+        //else
+        //{
+        //    TheLight.pointLightOuterRadius -= .0002f;
+        //    GetComponent<CircleCollider2D>().radius -= .0002f;
+        //}
         if (TheLight.pointLightOuterRadius >= 2)
         {
-            TheLight.pointLightOuterRadius -= .0009f;
-            GetComponent<CircleCollider2D>().radius -= .0009f;
+            TheLight.pointLightOuterRadius -= .0020f;
+            GetComponent<CircleCollider2D>().radius -= .0020f;
         }
         else
         {
-            TheLight.pointLightOuterRadius -= .0001f;
-            GetComponent<CircleCollider2D>().radius -= .0001f;
+            TheLight.pointLightOuterRadius -= .0005f;
+            GetComponent<CircleCollider2D>().radius -= .0005f;
         }
         if (TheLight.pointLightOuterRadius <= 0f)
         {
